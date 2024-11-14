@@ -25,43 +25,43 @@ function SideBar() {
           alt="dashboard"
         />
         <MenuItem
-          path="/tenant_info"
+          path="/Tenants"
           linkIcon="group"
           linkText="Tenants"
           alt="Tenants"
         />
         <MenuItem
-          path="/rent_info"
+          path="/Rents"
           linkIcon="receipt"
           linkText="Rents"
           alt="Rents"
         />
         <MenuItem
-          path="/parking_info"
+          path="/Parking"
           linkIcon="local_parking"
           linkText="Parking"
           alt="Parking"
         />
         <MenuItem
-          path="/hall_info"
+          path="/Halls"
           linkIcon="event_seat"
           linkText="Halls"
           alt="Halls"
         />
         <MenuItem
-          path="/complaint_info"
+          path="/Complaints"
           linkIcon="report_problem"
           linkText="Complaints"
           alt="Complaints"
         />
         <MenuItem
-          path="/service_info"
+          path="/Service"
           linkIcon="home_repair_service"
           linkText="Services"
           alt="Services"
         />
         <MenuItem
-          path="/notice_info"
+          path="/Notice"
           linkIcon="mail"
           linkText="Notices"
           alt="Notices"

@@ -1,0 +1,82 @@
+.field{
+    background-color: rgb(242, 242, 242,1);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 320px;
+}
+.tableName{
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+.colName{
+    font-weight: bold;
+    font-size: 14px;
+}
+hr { 
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  .user-detail{
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.1);
+    border-radius: 13px;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    height:406px;
+    width: 320px;
+    /* justify-content: space-between; */
+  }
+  .user-detail img{
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .service-info-container,.user-rent-detail{
+    
+    width: 100% ;
+    min-width: 25vmax;
+    height: 191px;
+    border-radius: 13px;
+    box-shadow: 0 4px 16px  0 rgba(0,0,0,0.1);
+    padding: 5%;
+    margin-bottom: 8%;
+    
+  }
+  .payment-status{
+    display: flex;
+    justify-content: space-between;
+  }
+  .user-rent-detail_inner{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .service-info-container{
+    display: flex;
+    flex-direction: row;
+  }
+  strong{
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .service-info-inner-count{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .service-info-inner-count p{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    margin-left:50%;
+  }
