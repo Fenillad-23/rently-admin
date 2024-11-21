@@ -1,11 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import BasicTable from "../components/TableDataView/TableView";
+import {
+  paginationModel,
+  columnname,
+  rowdata,
+} from "../components/model_data/Notice/NoticeInfo.js";
 
- function NoticeInfo(){
-    return(
-        <div className="notice-info-container">
-            <h1>This is Notice board</h1>
-        </div>
- 
-    );
- }
- export default NoticeInfo;
+function NoticeInfo() {
+  return (
+    <>
+      <BasicTable
+        columnname={columnname}
+        rowdata={rowdata}
+        noOfColumns={5}
+        tableName="List Of Notices"
+        initialState={paginationModel}
+      />
+    </>
+  );
+}
+
+export default NoticeInfo;

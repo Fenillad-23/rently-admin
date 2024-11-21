@@ -4,19 +4,20 @@ import {
   paginationModel,
   columnname,
   rowdata,
-} from "../components/model_data/Hall/HallInfo.js";
+} from "../components/model_data/Service/ServiceInfo.js";
 
-function HallsInfo() {
+function ServiceInfo() {
   return (
     <>
       <BasicTable
         columnname={columnname}
         rowdata={rowdata}
-        noOfColumns={6}
-        tableName="Hall Requests"
+        noOfColumns={5}
+        tableName="List Of Services"
         initialState={paginationModel}
       />
     </>
   );
 }
-export default HallsInfo;
+
+export default ServiceInfo;

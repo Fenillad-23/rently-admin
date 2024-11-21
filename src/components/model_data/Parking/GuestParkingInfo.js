@@ -1,0 +1,107 @@
+const guestParkingColumns = [
+  "Unit No",
+  "Payment Date",
+  "Plat No",
+  "Parking Fees",
+  "Duration",
+  "Reference Id",
+  "Status",
+];
+
+const guestParkingData = [
+  {
+    "Unit No": "#135",
+    "Payment Date": "07 Oct 2024",
+    "Plate No": "KJH6545",
+    "Parking Fees": "$5.50",
+    Duration: "04.00pm, 07 Oct 2024 - 09.30pm, 07 Oct 2024",
+    "Reference Id": "6564546",
+    Status: "In Use",
+  },
+  {
+    "Unit No": "#136",
+    "Payment Date": "07 Oct 2024",
+    "Plate No": "JHSU322",
+    "Parking Fees": "$0.00",
+    Duration: "10.00am, 07 Oct 2024 - 12.00pm, 07 Oct 2024",
+    "Reference Id": "2594024",
+    Status: "Time Over",
+  },
+  {
+    "Unit No": "#135",
+    "Payment Date": "05 Oct 2024",
+    "Plate No": "HSKK456",
+    "Parking Fees": "$8.75",
+    Duration: "02.00pm, 07 Oct 2024 - 09.30pm, 07 Oct 2024",
+    "Reference Id": "3790456",
+    Status: "Time Over",
+  },
+  {
+    "Unit No": "#139",
+    "Payment Date": "02 Oct 2024",
+    "Plate No": "PLM9987",
+    "Parking Fees": "$2.25",
+    Duration: "08.00am, 07 Oct 2024 - 11.00am, 07 Oct 2024",
+    "Reference Id": "4867023",
+    Status: "Time Over",
+  },
+  {
+    "Unit No": "#143",
+    "Payment Date": "02 Oct 2024",
+    "Plate No": "LKJH678",
+    "Parking Fees": "$4.30",
+    Duration: "01.00pm, 07 Oct 2024 - 03.30pm, 07 Oct 2024",
+    "Reference Id": "9034562",
+    Status: "Time Over",
+  },
+
+  {
+    "Unit No": "#135",
+    "Payment Date": "07 Oct 2024",
+    "Plate No": "KJH6545",
+    "Parking Fees": "$5.50",
+    Duration: "04.00pm, 07 Oct 2024 - 09.30pm, 07 Oct 2024",
+    "Reference Id": "6564546",
+    Status: "In Use",
+  },
+  {
+    "Unit No": "#136",
+    "Payment Date": "07 Oct 2024",
+    "Plate No": "JHSU322",
+    "Parking Fees": "$0.00",
+    Duration: "10.00am, 07 Oct 2024 - 12.00pm, 07 Oct 2024",
+    "Reference Id": "2594024",
+    Status: "Time Over",
+  },
+  {
+    "Unit No": "#135",
+    "Payment Date": "05 Oct 2024",
+    "Plate No": "HSKK456",
+    "Parking Fees": "$8.75",
+    Duration: "02.00pm, 07 Oct 2024 - 09.30pm, 07 Oct 2024",
+    "Reference Id": "3790456",
+    Status: "Time Over",
+  },
+  {
+    "Unit No": "#139",
+    "Payment Date": "02 Oct 2024",
+    "Plate No": "PLM9987",
+    "Parking Fees": "$2.25",
+    Duration: "08.00am, 07 Oct 2024 - 11.00am, 07 Oct 2024",
+    "Reference Id": "4867023",
+    Status: "Time Over",
+  },
+  {
+    "Unit No": "#143",
+    "Payment Date": "02 Oct 2024",
+    "Plate No": "LKJH678",
+    "Parking Fees": "$4.30",
+    Duration: "01.00pm, 07 Oct 2024 - 03.30pm, 07 Oct 2024",
+    "Reference Id": "9034562",
+    Status: "Time Over",
+  },
+];
+
+const guestParkingPagination = { page: 0, pageSize: 5 };
+
+export { guestParkingPagination, guestParkingColumns, guestParkingData };

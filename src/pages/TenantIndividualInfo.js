@@ -7,13 +7,13 @@ import {
   individualInfopaginationModel,
   columnname,
   rowdata,
-} from "../components/model_data/TenantIndividualInfo";
+} from "../components/model_data/Tenant/TenantIndividualInfo";
 import {
   parkingColumnname, parkingRowdata, parkingPaginationModel
-} from "../components/model_data/TenantParkingInfo";
+} from "../components/model_data/Tenant/TenantParkingInfo";
 import {
   complainColumnname, complainRowdata, complainPaginationModel
-} from "../components/model_data/TenantComplainService";
+} from "../components/model_data/Tenant/TenantComplainService";
 import BasicTable from "../components/TableDataView/TableView";
 import "./pages.css";
 function TenantsIndividualinfo() {

@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/DashBoard";
 import TenantsInfo from "./pages/TenantsInfo";
 import ParkingInfo from "./pages/ParkingInfo";
+import ComplaintsInfo from "./pages/ComplaintsInfo";
+import ServiceInfo from "./pages/ServicesInfo";
 
 import HallsInfo from "./pages/HallsInfo";
 import NoticeInfo from "./pages/NoticeInfo";
@@ -30,7 +32,9 @@ function App() {
             <Route path="/Tenants" element={<TenantsInfo />} />
             <Route path="/Parking" element={<ParkingInfo />} />
             <Route path="/Halls" element={<HallsInfo />} />
+            <Route path="/Complaints" element={<ComplaintsInfo />} />
             <Route path="/Notice" element={<NoticeInfo />} />
+            <Route path="/Service" element={<ServiceInfo />} />
             {/* <Route path="/UserServicesInfo" element={<UserServicesInfo />} /> */}
             <Route path="/Rents" element={<RentInfo />} />
             <Route path="/login" element={<Login />} />
