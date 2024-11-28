@@ -26,7 +26,6 @@ function HallsInfo() {
     return (
       <div className="list-wrapper">
         <div className="hall-header">
-          {/* Back arrow */}
           <mwc-icon
             className="back-arrow"
             onClick={() => setIsArrowClicked(false)} // Set to false to render BasicTable

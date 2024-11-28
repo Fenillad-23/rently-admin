@@ -50,8 +50,6 @@ export default function BasicTable({
     });
 
     window.dispatchEvent(event);
-  
-    console.log('Arrow clicked for row:', row);
   };
 
   const filteredRows = rowdata.filter((row) =>
@@ -61,8 +59,6 @@ export default function BasicTable({
       return value.toString().toLowerCase().includes(fieldValue.toLowerCase());
     })
   );
-
-  console.log(showIconProp);
 
   return (
     <TableContainer
