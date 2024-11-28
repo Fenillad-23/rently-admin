@@ -172,4 +172,134 @@ const rowdata = [
 
 const paginationModel = { page: 0, pageSize: 10 };
 
-export { paginationModel, columnname, rowdata };
+const hallSchedule = [
+  {
+    date: "02 Oct 2024",
+    time: "10.00am - 12.30pm",
+    hall: "Decennial Hall",
+    sessionId: "#140",
+    tenant: "Jane Smith",
+  },
+  {
+    date: "12 Oct 2024",
+    time: "08.00am - 12.00pm",
+    hall: "Insight Hall",
+    sessionId: "#145",
+    tenant: "James Brown",
+  },
+  {
+    date: "12 Oct 2024",
+    time: "--- 03.00pm",
+    hall: "Insight Hall",
+    sessionId: "#145",
+    tenant: "James Brown",
+  },
+  {
+    date: "05 Nov 2024",
+    time: "08.30am - 02.45pm",
+    hall: "Decennial Hall",
+    sessionId: "#155",
+    tenant: "David Chen",
+  },
+  {
+    date: "15 Nov 2024",
+    time: "10.15am - 01.45pm",
+    hall: "Insight Hall",
+    sessionId: "#160",
+    tenant: "Emily Wong",
+  },
+  {
+    date: "30 Nov 2024",
+    time: "11.30am - 03.00pm",
+    hall: "Decennial Hall",
+    sessionId: "#170",
+    tenant: "Olivia Davis",
+  },
+  {
+    date: "05 Dec 2024",
+    time: "09.00am - 12.30pm",
+    hall: "Insight Hall",
+    sessionId: "#180",
+    tenant: "Michael Johnson",
+  },
+  {
+    date: "15 Dec 2024",
+    time: "08.45am - 01.15pm",
+    hall: "Insight Hall",
+    sessionId: "#185",
+    tenant: "Sarah Miller",
+  },
+  {
+    date: "22 Dec 2024",
+    time: "--- ---",
+    hall: "Insight Hall",
+    sessionId: "#190",
+    tenant: "Sophia Martinez",
+  },
+  {
+    date: "02 Oct 2024",
+    time: "10.00am - 12.30pm",
+    hall: "Decennial Hall",
+    sessionId: "#140",
+    tenant: "Jane Smith",
+  },
+  {
+    date: "12 Oct 2024",
+    time: "08.00am - 12.00pm",
+    hall: "Insight Hall",
+    sessionId: "#145",
+    tenant: "James Brown",
+  },
+  {
+    date: "12 Oct 2024",
+    time: "--- 03.00pm",
+    hall: "Insight Hall",
+    sessionId: "#145",
+    tenant: "James Brown",
+  },
+  {
+    date: "05 Nov 2024",
+    time: "08.30am - 02.45pm",
+    hall: "Decennial Hall",
+    sessionId: "#155",
+    tenant: "David Chen",
+  },
+  {
+    date: "15 Nov 2024",
+    time: "10.15am - 01.45pm",
+    hall: "Insight Hall",
+    sessionId: "#160",
+    tenant: "Emily Wong",
+  },
+  {
+    date: "30 Nov 2024",
+    time: "11.30am - 03.00pm",
+    hall: "Decennial Hall",
+    sessionId: "#170",
+    tenant: "Olivia Davis",
+  },
+  {
+    date: "05 Dec 2024",
+    time: "09.00am - 12.30pm",
+    hall: "Insight Hall",
+    sessionId: "#180",
+    tenant: "Michael Johnson",
+  },
+  {
+    date: "15 Dec 2024",
+    time: "08.45am - 01.15pm",
+    hall: "Insight Hall",
+    sessionId: "#185",
+    tenant: "Sarah Miller",
+  },
+  {
+    date: "22 Dec 2024",
+    time: "--- ---",
+    hall: "Insight Hall",
+    sessionId: "#190",
+    tenant: "Sophia Martinez",
+  },
+];
+
+
+export { paginationModel, columnname, rowdata, hallSchedule };

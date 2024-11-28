@@ -5,6 +5,7 @@
   justify-content: space-between;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 13px;
+  background-color: white;
 }
 
 p {
@@ -129,4 +130,8 @@ p {
   .card {
     flex: 1 1 100%; /* Full-width cards on small screens */
   }
+}
+
+body {
+  --bs-body-bg: #F2F2F2;
 }

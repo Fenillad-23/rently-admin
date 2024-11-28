@@ -19,11 +19,13 @@ export default function BasicTable({
   redirectTo,
   noOfRows = 10,
   style,
+  showIconProp,
 }) {
   const navigate = useNavigate();
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(noOfRows);
   const [fieldValue, setFieldValue] = React.useState("");
+
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
@@ -41,6 +43,17 @@ export default function BasicTable({
     setFieldValue(event.target.value);
   };
 
+  const handleArrowClick = (row) => {
+    // Dispatch a custom event with row data
+    const event = new CustomEvent('arrow-click', {
+      detail: row,
+    });
+
+    window.dispatchEvent(event);
+  
+    console.log('Arrow clicked for row:', row);
+  };
+
   const filteredRows = rowdata.filter((row) =>
     Object.values(row).some((value) => {
       if (!value) return;
@@ -48,6 +61,8 @@ export default function BasicTable({
       return value.toString().toLowerCase().includes(fieldValue.toLowerCase());
     })
   );
+
+  console.log(showIconProp);
 
   return (
     <TableContainer
@@ -72,7 +87,8 @@ export default function BasicTable({
               >
                 {col}
               </TableCell>
-            ))} 
+            ))}
+            {showIconProp ? <TableCell></TableCell> : ``}
           </TableRow>
         </TableHead>
         <TableBody>
@@ -90,9 +106,13 @@ export default function BasicTable({
                       if (["Pending"].includes(cell)) {
                         tagColor = "yellow-tag";
                       } else if (
-                        ["Published", "Paid", "Resolved", "Approved", "In Use"].includes(
-                          cell
-                        )
+                        [
+                          "Published",
+                          "Paid",
+                          "Resolved",
+                          "Approved",
+                          "In Use",
+                        ].includes(cell)
                       ) {
                         tagColor = "green-tag";
                       } else if (["Rejected", "Deleted"].includes(cell)) {
@@ -123,6 +143,16 @@ export default function BasicTable({
                       </TableCell>
                     );
                   })}
+                {/* Add the icon conditionally based on the showIconProp */}
+                {showIconProp ? (
+                  <TableCell align="right" onClick={() => handleArrowClick(row)}>
+                    <mwc-icon style={{ cursor: "pointer", color: "#999" }}>
+                      chevron_right
+                    </mwc-icon>
+                  </TableCell>
+                ) : (
+                  ``
+                )}
               </TableRow>
             ))}
         </TableBody>

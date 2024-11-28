@@ -1,0 +1,106 @@
+.list-wrapper {
+  background: white;
+  margin-top: 24px;
+  border-radius: 16px;
+  width: 320px;
+  padding: 16px;
+  gap: 24px;
+}
+
+.hall-header {
+  font-weight: 600;
+  font-size: 24px;
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.list-item-wrapper,
+.list-wrapper,
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item-wrapper {
+  gap: 4px;
+}
+
+.list-item-row {
+  display: flex;
+}
+
+.list-item-row:last-of-type {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.date,
+.time {
+  flex: 1;
+}
+
+.date,
+.hall-name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.hall-name {
+  font-size: 14px;
+}
+
+.time,
+.tenant-name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3c3c4399;
+}
+
+/* Style the scrollable container */
+.list {
+  gap: 12px;
+  max-height: calc(100vh - 250px);
+  overflow-y: hidden; /* Hide the scrollbar initially */
+  padding-right: 4px; /* Reserve space for the scrollbar */
+  box-sizing: content-box; /* Ensure padding doesn’t affect width */
+  position: relative;
+}
+
+/* Show the scrollbar on hover */
+.list:hover {
+  overflow-y: auto; /* Enable scrolling when hovered */
+}
+
+/* Modern 4px-wide scrollbar styles for Webkit-based browsers */
+.list::-webkit-scrollbar {
+  width: 4px; /* Width of the vertical scrollbar */
+}
+
+.list::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light background for the scrollbar track */
+  border-radius: 4px; /* Rounded corners for the track */
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker thumb color on hover */
+}
+
+/* Firefox-specific scrollbar styles */
+.list {
+  scrollbar-width: thin; /* Make the scrollbar thin */
+  scrollbar-color: #888 #f0f0f0; /* Thumb color and track color */
+}
+
+mwc-icon {
+  cursor: pointer;
+  color: darkgray;
+}

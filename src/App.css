@@ -1,7 +1,7 @@
 
 .main-container{
   flex-grow: 1;
-  padding: 2%;
+  padding: 24px;
   display: flex;
   flex-direction: column;  
   margin-left: 280px;
