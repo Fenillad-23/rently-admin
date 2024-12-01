@@ -9,13 +9,16 @@ import "@material/mwc-dialog/mwc-dialog.js";
 import "@material/mwc-button";
 import "@material/mwc-textarea";
 import "./ComplaintsInfo.css";
+import "@material/mwc-icon-button";
 
 function ComplaintsInfo() {
   const [isArrowClicked, setIsArrowClicked] = useState(false);
+  const [complaintDetails, setComplaintDetails] = useState(null);
 
   useEffect(() => {
     const handleRowArrowClick = (event) => {
-      setIsArrowClicked(true); // Set to true to show Hall Schedule
+      setComplaintDetails(event.detail);
+      setIsArrowClicked(true);
     };
 
     window.addEventListener("arrow-click", handleRowArrowClick);
@@ -37,16 +40,22 @@ function ComplaintsInfo() {
 
       {isArrowClicked ? (
         <mwc-dialog open>
-          <div className="dialog-header">Loud music at night</div>
+          <div className="dialog-header">
+            {complaintDetails.title}{" "}
+            <mwc-icon-button
+              icon="close"
+              onClick={() => setIsArrowClicked(false)}
+            ></mwc-icon-button>
+          </div>
 
           <div className="basic-detail-wrapper">
             <div>
               <div className="header">Ref. No:</div>
-              <div className="label">#C0010</div>
+              <div className="label">{complaintDetails.refNo} </div>
             </div>
             <div>
               <div className="header">Unit No:</div>
-              <div className="label">136</div>
+              <div className="label">{complaintDetails.unitNo}</div>
             </div>
             <div>
               <div className="header">Related To</div>
@@ -54,11 +63,13 @@ function ComplaintsInfo() {
             </div>
             <div>
               <div className="header">Date:</div>
-              <div className="label">10 Dec 2024</div>
+              <div className="label">{complaintDetails.date}</div>
             </div>
             <div>
               <div className="header">Status:</div>
-              <div className="label">Pending</div>
+              <div className={`label ${complaintDetails.status}`}>
+                {complaintDetails.status}
+              </div>
             </div>
           </div>
 
@@ -69,26 +80,44 @@ function ComplaintsInfo() {
             side.
           </div>
 
-          <mwc-textarea
-            outlined
-            label="Admin's Comment"
-            placeholder="Enter Comment"
-          ></mwc-textarea>
+          {complaintDetails.status === "Pending" ? (
+            <mwc-textarea
+              outlined
+              label="Admin's Comment"
+              placeholder="Enter Comment"
+            ></mwc-textarea>
+          ) : (
+            <div>
+              <div className="header" style={{ paddingTop: "24px" }}>
+                Admin's Comment:
+              </div>
+              <div className="desc label">
+                The garbage disposal issue had been resolved. Sorry for the
+                inconvenience experienced.
+              </div>
+            </div>
+          )}
 
-          <mwc-button
-            outlined
-            slot="secondaryAction"
-            onClick={() => setIsArrowClicked(false)}
-          >
-            Cancel
-          </mwc-button>
-          <mwc-button
-            raised
-            slot="primaryAction"
-            onClick={() => setIsArrowClicked(false)}
-          >
-            Resolve Issue
-          </mwc-button>
+          {complaintDetails.status === "Pending" ? (
+            <>
+              <mwc-button
+                outlined
+                slot="secondaryAction"
+                onClick={() => setIsArrowClicked(false)}
+              >
+                Cancel
+              </mwc-button>
+              <mwc-button
+                raised
+                slot="primaryAction"
+                onClick={() => setIsArrowClicked(false)}
+              >
+                Resolve Issue
+              </mwc-button>
+            </>
+          ) : (
+            ``
+          )}
         </mwc-dialog>
       ) : (
         ``
