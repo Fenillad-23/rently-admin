@@ -1,0 +1,70 @@
+.service-info {
+  --mdc-dialog-min-width: 900px;
+  --mdc-shape-medium: 16px;
+  --mdc-dialog-content-ink-color: black;
+}
+
+.basic-detail-wrapper {
+  display: flex;
+  gap: 16px;
+  color: black;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+.basic-detail-wrapper * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dialog-header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3c3c4399;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.desc {
+  font-weight: 400;
+  padding-top: 8px;
+}
+
+mwc-textarea {
+  width: -webkit-fill-available;
+  padding-top: 24px;
+}
+
+mwc-button {
+  --mdc-shape-small: 24px;
+  --mdc-theme-primary: #271033;
+}
+
+.Pending {
+  color: #bf6a02;
+}
+
+.Resolved {
+  color: #009951;
+}
+
+.react-datepicker-wrapper {
+  margin-left: -10px;
+  height: 48px;
+}

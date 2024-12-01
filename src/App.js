@@ -14,7 +14,7 @@ import NoticeInfo from "./pages/NoticeInfo";
 import RentInfo from "./pages/RentInfo";
 import SideBar from "./layout/SideBar";
 import Breadcrumbs from "./layout/BreadCrums";
-import TenantsIndividualinfo from "./pages/TenantIndividualInfo";
+import TenantsIndividualinfo from "./pages/TenantIndividualInfo"; 
 function App() {
   const location = useLocation();
   return (
