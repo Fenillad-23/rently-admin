@@ -8,7 +8,7 @@ export const validateLogin = (formData) => {
 
   if (!formData.password.trim()) {
     errors.password = "Password is required";
-  } else if (!formData.password.length < 6) {
+  } else if (formData.password.length < 6) {
     errors.password = "Password should be least 6 characters";
   }
   return errors;

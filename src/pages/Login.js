@@ -8,9 +8,11 @@ import CustomInputField from "../components/CustomInputField.js";
 import { validateLogin } from "../helper/validation.js";
 import ErrorMessage from "../components/ErrorMessage";
 import StrConst from "../helper/StrConst.js";
+import { useNavigate } from "react-router-dom";
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [passwordIcon, setPasswordIcon] = useState(VisibilityOff);
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: "",
     password: "",
@@ -35,6 +37,7 @@ function Login() {
       alert("Invalid credentials");
     } else {
       alert("Login successful");
+      navigate("/Tenants");
     }
   };
   return (
